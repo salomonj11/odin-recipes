@@ -4,16 +4,65 @@
 
 <head>
     <meta charset="utf-8">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- CSS STYLE SHEET -->
+    <link rel="stylesheet" href="app.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <title>Odin Recipes</title>
+
 </head>
 
 <body>
     <h1>Odin Recipes</h1>
-    <ul>
-        <li><a href="./recipes/lasagna.html">Lasagna Recipe</a></li>
-        <li><a href="recipes/carrotcakeoats.html">OverNight Carrot Cake Oats</a></li>
-        <li><a href="recipes/noodlesoup.html">Chicken Noodle Soup Recipe</a></li>
-    </ul>
+    <img class="displayed"
+        src="https://www.theodinproject.com/assets/about_page/odin-mascot-09612759a92b4a900c836a951e0b7becb7ceac47a5e2bf2225c13732cb99aa09.svg"
+        class="img-fluid" alt="Responsive Image">
+    <section class="mainContent">
+
+        <div class="container">
+
+            <div class="foodPicture">
+                <a href="./recipes/lasagna.html">
+                    <img class="mainPictures"
+                        src="https://images.unsplash.com/photo-1621510456681-2330135e5871?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFzYWduYXxlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60">
+                    <span class="caption">Lasagna</span>
+                </a>
+            </div>
+
+
+            <div class="foodPicture">
+                <a href="recipes/carrotcakeoats.html">
+                    <img class="mainPictures"
+                        src="https://images.unsplash.com/photo-1532884968933-5173fdde39f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b3Zlcm5pZ2h0JTIwb2F0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+                    <span class="caption">Overnight Oats</span>
+                </a>
+            </div>
+
+            <div class="foodPicture">
+                <a href="recipes/noodlesoup.html">
+                    <img class="mainPictures"
+                        src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hpY2tlbiUyMG5vb2RsZSUyMHNvdXB8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+                    <span class="caption">Noodle Soup</span>
+            </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
 
 </body>
 
