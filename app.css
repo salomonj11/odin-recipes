@@ -1,34 +1,46 @@
-h1 {
-    font-family: "Lobster";
-    sans-serif;
-    text-align: center;
-}
+@media (max-width: 3200px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2%;
+
+    }
 
 
-.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 35%;
-    max-height: 35%;
-    padding-bottom: 1em;
-
-}
+    h1 {
+        font-family: "Lobster";
+        sans-serif;
+        text-align: center;
+    }
 
 
-.column {
-    flex: 30%;
-    padding 5px;
-}
+    .displayed {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 35%;
+        max-height: 35%;
+        padding-bottom: 1em;
 
-.container {
-    display: flex;
-    max-width: 3200px;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    }
 
-}
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2%;
+
+    }
+
+    .img-container img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        float: left;
+        min-width: 33%;
+
+    }
 
 
 }
@@ -41,15 +53,9 @@ h1 {
 }
 
 .mainContent {
-    box-sizing: border-box;
     padding: 10px 5px;
-}
-
-.foodPicture {
-    display: flex;
-    height: 125px;
-    margin-bottom: 5px;
-    padding-bottom: 25px;
+    height: 450px;
+    max-width: 100%;
 }
 
 
@@ -57,16 +63,21 @@ div.foodPicture {
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    width: 120px;
+    float: left;
+    min-width: 33%;
+    height: auto;
+    width: 100%;
 }
 
 img.mainPictures {
-    width: 100px;
-    height: 100px;
     background-color: grey;
     image-rendering: auto;
     image-rendering: crisp-edges;
     image-rendering: pixelated;
+    float: left;
+    min-width: 33%;
+    height: auto;
+
 }
 
 .caption {
@@ -75,4 +86,9 @@ img.mainPictures {
     font-weight: 400;
     font-family: Bebas Neue;
     sans-serif;
+    margin-top: 5px;
+}
+
+#oats {
+    height:
 }
